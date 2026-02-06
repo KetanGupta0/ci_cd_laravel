@@ -27,7 +27,7 @@ jobs:
           php artisan key:generate
 
       - name: Run tests
-        run: php artisan test
+        run: php artisan test --this-command-does-not-exist
 
       - name: Cache Composer dependencies
         uses: actions/cache@v4
